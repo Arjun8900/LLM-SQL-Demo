@@ -35,3 +35,6 @@ prompt = PromptTemplate(
 hub_chain = LLMChain(prompt=prompt, llm=local_llm, verbose=True)
 print(hub_chain.run("What is the average age of respondents using mobile device"))
 ```
+![Animation](https://github.com/Arjun8900/LLM-SQL-Demo/assets/30146648/c8354e42-641e-4f3a-9612-07cfdc779066)
+
+# Using a Small model
