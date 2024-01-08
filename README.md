@@ -4,7 +4,10 @@
 2. Download the model
 3. Use the downloaded model to 
 
-# Download the model in local
+- [Using a Small model](#Using a Small model)
+- 
+# Using a Small model
+## Download the model in local
 ```python
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
 from langchain.llms import HuggingFacePipeline
@@ -17,13 +20,13 @@ model = AutoModelForSeq2SeqLM.from_pretrained(model)
 ```
 
 
-# Create pipeline
+## Create pipeline
 ```python
 pipe = pipeline("text2text-generation", model=model, tokenizer=tokenizer, max_length=100)
 local_llm = HuggingFacePipeline(pipeline=pipe)
 ```
 
-# Create prompt and write the text
+## Create prompt and write the text
 ```python
 prompt = PromptTemplate(
     input_variables=["question"],
