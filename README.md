@@ -4,7 +4,7 @@
 2. Download the model
 3. Use the downloaded model to 
 
-- [Using a Small model](#Using a Small model)
+- [Using a Small model](#Using-a-Small-model)
 - 
 # Using a Small model
 ## Download the model in local
