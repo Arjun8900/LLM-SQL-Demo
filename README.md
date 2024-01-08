@@ -5,8 +5,14 @@
 3. Use the downloaded model to 
 
 - [Using a Small model](#Using-a-Small-model)
-- 
+  - [DEMO](#demo)
+  - [Download the model in local](#download-the-model-in-local)
+  - [Create pipeline](#create-pipeline)
+  - [Create prompt and write the text](#create-prompt-and-write-the-text)
 # Using a Small model
+## DEMO
+![Text2SQL](https://github.com/Arjun8900/LLM-SQL-Demo/assets/30146648/df3f86ae-1fd7-48ca-8cb9-76013b02372b)
+
 ## Download the model in local
 ```python
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
@@ -18,7 +24,6 @@ model = "mrm8488/t5-base-finetuned-wikiSQL"
 tokenizer = AutoTokenizer.from_pretrained(model)
 model = AutoModelForSeq2SeqLM.from_pretrained(model)
 ```
-
 
 ## Create pipeline
 ```python
@@ -35,6 +40,4 @@ prompt = PromptTemplate(
 hub_chain = LLMChain(prompt=prompt, llm=local_llm, verbose=True)
 print(hub_chain.run("What is the average age of respondents using mobile device"))
 ```
-![Animation](https://github.com/Arjun8900/LLM-SQL-Demo/assets/30146648/c8354e42-641e-4f3a-9612-07cfdc779066)
-
-# Using a Small model
+# Using a Large model
