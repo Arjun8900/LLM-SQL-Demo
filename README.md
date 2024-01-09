@@ -1,5 +1,5 @@
 # LLM
-
+This Demo demonstrate to use a model offline. Since, its downloaded there is no need for any Key.
 1. Install all packages using `!pip install openai langchain huggingface_hub transformers sentence_transformers datasets`
 2. Download the model
 3. Use the downloaded model to 
@@ -13,6 +13,7 @@
 ## DEMO
 ![Text2SQL](https://github.com/Arjun8900/LLM-SQL-Demo/assets/30146648/df3f86ae-1fd7-48ca-8cb9-76013b02372b)
 
+![Text2SQL_Demo](https://github.com/Arjun8900/LLM-SQL-Demo/assets/30146648/47b03e7a-fcb2-4407-8a14-d1bf106f2237)
 ## Download the model in local
 ```python
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
